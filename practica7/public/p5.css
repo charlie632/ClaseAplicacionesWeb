@@ -1,0 +1,215 @@
+body {
+    width: 100%;
+    margin: 0%;
+}
+
+header {
+    background-image: url("/public/pinata.jpg");
+    background-color: #cccccc;
+    text-align: center;
+    height: auto;
+}
+
+header h1 {
+    color: brown;
+    text-shadow: rgb(233, 199, 4) 4px 4px 4px;
+    font-size: 50px;
+    padding: 30px 0px;
+    margin: 0px;
+}
+
+nav {
+    flex: 1 1 100%;
+    background-color: yellow;
+    padding: 5px 0px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 0% 5%;
+}
+
+nav > ul > li {
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    display: block;
+    transition-duration: 0.4s;
+}
+
+nav a:link {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+    background-color: rgb(49, 49, 49);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 15px);
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.comic-der{
+    width: 70%;
+    background-color: beige;
+    text-align: center;
+}
+
+.comic-der>img{
+    max-width: 95%;
+    margin: 10px;
+}
+
+.barra-izq{
+    width: 30%;
+    background-color: coral;
+    margin: 0px;
+    padding: 10px;
+}
+
+.dos-imagenes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; 
+}
+
+.dos-imagenes> div{
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    flex: 1;
+}
+
+.dos-imagenes img{
+    max-width: 100%;
+    height: auto;
+}
+
+.flechas{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flechas > img {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+#ix{
+    transform: rotate(180deg);
+}
+
+.descripcion {
+    background-color: coral;
+    float: left;
+    margin: 0%;
+    width: 40%;
+    height: 100%;
+    padding: 0% 2.5%;
+}
+
+footer {
+    height: auto;
+    background-color: rgb(73, 68, 68);
+    color: aliceblue;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 481px) {
+
+    #cap1, #cap2, #cap3 {
+        width: 90%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        padding: 0%;
+    }
+    nav > ul > li {
+        width: 100%;
+    }
+
+    .middle{
+        order: 1;
+        flex-direction: column !important;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .navbar{
+        order: 2;
+    }
+
+    .barra-izq{
+        width: 90%;
+        height: 100%;
+        padding: 0% 5%;
+    }
+
+    .comic-der{
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .dos-imagenes{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .dos-imagenes > div{
+        width: 100%;
+        margin: 0px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        padding: 15% 0%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
